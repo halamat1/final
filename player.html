@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Player</title>
+  <link rel="stylesheet" href="player.css">
+</head>
+<body>
+  <div class="video-container">
+    <video id="myVideo" controls>
+      <source src="battle.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="controls">
+      <button id="playPauseBtn">Play/Pause</button>
+      <input type="range" id="seekBar" value="0">
+      <button id="muteBtn">Mute</button>
+      <input type="range" id="volumeBar" value="100">
+    </div>
+  </div>
+  <script src="player.js"></script>
+</body>
+</html>
